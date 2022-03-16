@@ -14,7 +14,7 @@ int main() {
 	cin >> legs;
 	//cout << "调试结果" << heads << legs << chicken <<endl;
 	while (legs<chicken*2+rabit*4) {
-		chicken = chicken + 1;
+		chicken++;
 		//cout << "调试结果" << heads << legs << chicken << endl;
 	}
 	if (chicken < 0 || rabit < 0) {
