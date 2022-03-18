@@ -23,6 +23,8 @@ int main() {
 		return 0;
 	}else if(chicken*2+rabit*4!=legs){
 		cout << "你这值有问题啊！检查一下啊\n错误原因为:无法得到正确的鸡或者兔子数量值" << endl;
+		system("pause");
+		return 0;
 	}else {
 		cout << "结果:\n鸡子有" << chicken << "\n兔子有" << (heads - chicken) << endl;
 		system("pause");
