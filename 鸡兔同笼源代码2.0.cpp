@@ -1,5 +1,5 @@
-//2022.3.16Ë¼¿¼ÌâµÄÍêÕû³ÌĞò
-//¼¦ÍÃÍ¬Áı author : Nicktang
+//2022.3.16æ€è€ƒé¢˜çš„å®Œæ•´ç¨‹åº
+//é¸¡å…”åŒç¬¼ author : Nicktang
 #include <iostream>
 #define rabit (heads - chicken)
 using namespace std;
@@ -8,23 +8,23 @@ int main() {
 	int chicken = 0;
 	int heads;
 	int legs;
-	cout << "¼¦ÍÃÍ¬Áı¼ÆËãÆ÷\nby Nicktang\nÇëÊäÈëÏÖÔÚÓĞ¶àÉÙ¸öÍ·" << endl;
+	cout << "é¸¡å…”åŒç¬¼è®¡ç®—å™¨\nby Nicktang\nè¯·è¾“å…¥ç°åœ¨æœ‰å¤šå°‘ä¸ªå¤´" << endl;
 	cin >> heads;
-	cout << " \n ÇëÊäÈëÍÈ×ÓÊıÁ¿\n";
+	cout << " \n è¯·è¾“å…¥è…¿å­æ•°é‡\n";
 	cin >> legs;
-	//cout << "µ÷ÊÔ½á¹û" << heads << legs << chicken <<endl;
+	//cout << "è°ƒè¯•ç»“æœ" << heads << legs << chicken <<endl;
 	while (legs<chicken*2+rabit*4) {
-		chicken = chicken + 1;
-		//cout << "µ÷ÊÔ½á¹û" << heads << legs << chicken << endl;
+		chicken++;
+		//cout << "è°ƒè¯•ç»“æœ" << heads << legs << chicken << endl;
 	}
 	if (chicken < 0 || rabit < 0) {
-		cout << "ÄãÕâÖµÓĞÎÊÌâ°¡£¡¼ì²éÒ»ÏÂ°¡\n´íÎóÔ­ÒòÎª:¼¦»òÕßÍÃ×ÓµÄ¼ÆËãÖµÎª¸ºÊı" << endl;
+		cout << "ä½ è¿™å€¼æœ‰é—®é¢˜å•Šï¼æ£€æŸ¥ä¸€ä¸‹å•Š\né”™è¯¯åŸå› ä¸º:é¸¡æˆ–è€…å…”å­çš„è®¡ç®—å€¼ä¸ºè´Ÿæ•°" << endl;
 		system("pause");
 		return 0;
 	}else if(chicken*2+rabit*4!=legs){
-		cout << "ÄãÕâÖµÓĞÎÊÌâ°¡£¡¼ì²éÒ»ÏÂ°¡\n´íÎóÔ­ÒòÎª:ÎŞ·¨µÃµ½ÕıÈ·µÄ¼¦»òÕßÍÃ×ÓÊıÁ¿Öµ" << endl;
+		cout << "ä½ è¿™å€¼æœ‰é—®é¢˜å•Šï¼æ£€æŸ¥ä¸€ä¸‹å•Š\né”™è¯¯åŸå› ä¸º:æ— æ³•å¾—åˆ°æ­£ç¡®çš„é¸¡æˆ–è€…å…”å­æ•°é‡å€¼" << endl;
 	}else {
-		cout << "½á¹û:\n¼¦×ÓÓĞ" << chicken << "\nÍÃ×ÓÓĞ" << (heads - chicken) << endl;
+		cout << "ç»“æœ:\né¸¡å­æœ‰" << chicken << "\nå…”å­æœ‰" << (heads - chicken) << endl;
 		system("pause");
 		return 0;
 	}
